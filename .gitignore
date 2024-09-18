@@ -1,0 +1,21 @@
+# Ignore les fichiers compilés Java
+*.class
+
+# Ignore les répertoires de build
+/build/
+/bin/
+/target/
+
+# Ignorer les fichiers générés par les IDE
+*.log
+*.idea/
+*.iml
+*.project
+*.classpath
+/.vscode/
+/.settings/
+
+# Ignorer les fichiers de configuration spécifiques à l'environnement
+.DS_Store
+*.tmp
+*.swp
