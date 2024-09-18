@@ -12,8 +12,20 @@ public class Main {
         Fraction f2= new Fraction(12,2);
         System.out.println(f2.toString());
 
+        System.out.println(f2.doubleValue());
+
         System.out.println(f.getZERO());
         System.out.println(f.getUN());
+
+
+        //addition de fraction
+        Fraction sum1_N = f.add(fN);
+        System.out.println(sum1_N.toString());
+
+        //comparaison naturel entre 2 frac
+        System.out.println(f.CompFractionNaturel(fN));
+
+
 
     }
     

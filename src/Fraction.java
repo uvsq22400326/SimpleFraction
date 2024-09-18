@@ -42,6 +42,27 @@ public class Fraction{
         return UN;
     }
 
+    public double doubleValue(){
+        return numerateur/ denominateur;
+    }
+
+    public Fraction add(Fraction f){
+        int num = this.numerateur;
+        int den = this.denominateur;
+        int num2 = f.numerateur;
+        int den2 = f.denominateur;
+
+        int newNum= (num*den2) +(num2*den);
+        int newDen= den * den2;
+
+        return new Fraction(newNum,newDen);
+
+    }
+
+    public boolean CompFractionNaturel(Fraction f2){
+        return this.doubleValue()==f2.doubleValue();
+    }
+
 
 
 }
