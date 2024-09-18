@@ -29,7 +29,8 @@ public class Main {
         // Vérifiez avec le code ci-dessous
         Number aNumber = java.math.BigDecimal.ONE;
         Number anotherNumber = new Fraction(1, 2);
-        assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) > 1E-8; 
+        assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8; 
+        System.out.println((java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) < 1E-8));
     }
     
     
