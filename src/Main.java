@@ -11,7 +11,7 @@ public class Main {
         //test avec num et deno
         Fraction f2= new Fraction(12,2);
         System.out.println(f2.toString());
-
+/* 
         System.out.println(f2.doubleValue());
 
         System.out.println(f.getZERO());
@@ -23,10 +23,13 @@ public class Main {
         System.out.println(sum1_N.toString());
 
         //comparaison naturel entre 2 frac
-        System.out.println(f.CompFractionNaturel(fN));
+        System.out.println(f.CompFractionNaturel(fN));*/
 
 
-
+        // Vérifiez avec le code ci-dessous
+        Number aNumber = java.math.BigDecimal.ONE;
+        Number anotherNumber = new Fraction(1, 2);
+        assert java.lang.Math.abs(aNumber.doubleValue() + anotherNumber.doubleValue() - 1.5) > 1E-8; 
     }
     
     

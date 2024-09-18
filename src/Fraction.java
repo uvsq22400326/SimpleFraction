@@ -1,4 +1,4 @@
-public class Fraction{
+public class Fraction extends Number{
 
     private int numerateur;
     private int denominateur;
@@ -59,11 +59,36 @@ public class Fraction{
 
     }
 
-    public boolean CompFractionNaturel(Fraction f2){
-        return this.doubleValue()==f2.doubleValue();
+    // Implémentation des méthodes abstraites de Number
+    @Override
+    public byte byteValue() {
+        return (byte) intValue();
+    }
+
+    @Override
+    public short shortValue() {
+        return (short) intValue();
+    }
+
+    @Override
+    public int intValue() {
+        return numerateur / denominateur;
+    }
+
+    @Override
+    public long longValue() {
+        return (long) intValue();
+    }
+
+    @Override
+    public float floatValue() {
+        return (float) numerateur / denominateur;
     }
 
 
+    public boolean CompFractionNaturel(Fraction f2){
+        return this.doubleValue()==f2.doubleValue();
+    }
 
 }
 
